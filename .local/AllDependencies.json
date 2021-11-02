@@ -7582,9 +7582,9 @@
     "restore": {
       "projectUniqueName": "LeGroup Crack teh Code",
       "projectName": "LeGroup Crack teh Code",
-      "projectPath": "C:\\Users\\roger\\Documents\\UiPath\\LeGroup Code Break\\.local",
+      "projectPath": "G:\\UIPath\\.local",
       "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roger\\Documents\\UiPath\\LeGroup Code Break\\.local"
+      "outputPath": "G:\\UIPath\\.local"
     },
     "frameworks": {
       "net461": {

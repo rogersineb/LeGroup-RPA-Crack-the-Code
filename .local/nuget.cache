@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pc+6lTEQUUhaSx1gtMJl1ur+AcJOiRNd1UO0NII7Cw72qBadFbwb2rYVQMapt1EoOPq8TpBJXswDmIEfvg11/A==",
+  "dgSpecHash": "JvZI4bT4n2+cGoDRKJTzMZmk7T+6RlWLiuHyffepqFBFZcgfoDcflw9/THjEZtrkAeNpkzh2JfyXjVN1giruNw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\roger\\Documents\\UiPath\\LeGroup Code Break\\.local\\",
+  "projectFilePath": "G:\\UIPath\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\roger\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\roger\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
