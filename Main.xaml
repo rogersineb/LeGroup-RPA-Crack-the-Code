@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1143,5445" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1074,6191" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -98,39 +98,20 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence sap:VirtualizedContainerService.HintSize="680,5380" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="686,6126" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="CAR" Name="lote_num" />
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="orders_num" />
       <Variable x:TypeArguments="scg:IEnumerable(ui:UiElement)" Name="all_orders_enum" />
       <Variable x:TypeArguments="x:String" Default="2a9093db887efedf5d9b4cfa7ab25eb0" Name="token" />
-      <Variable x:TypeArguments="x:Int32" Name="pos_order_num">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="7" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="pos_tracking_num">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="12" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="pos_order_status">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="14" />
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:Int32" Name="leap">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="14" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="7" Name="pos_order_num" />
+      <Variable x:TypeArguments="x:Int32" Default="12" Name="pos_tracking_num" />
+      <Variable x:TypeArguments="x:Int32" Default="14" Name="pos_order_status" />
+      <Variable x:TypeArguments="x:Int32" Default="14" Name="leap" />
       <Variable x:TypeArguments="scg:List(ui:UiElement)" Name="element" />
       <Variable x:TypeArguments="x:Double" Name="total" />
-      <Variable x:TypeArguments="x:Int32" Name="element_not_count">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Int32" Value="6" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Int32" Default="6" Name="element_not_count" />
+      <Variable x:TypeArguments="x:String" Name="last_shipping" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -138,13 +119,13 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ST Logística - Rastreamento de Pacotes v1.00" sap:VirtualizedContainerService.HintSize="638,5288" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ST Logística - Rastreamento de Pacotes v1.00" sap:VirtualizedContainerService.HintSize="644,6034" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,4999" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="610,5745" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:UiElement" Name="browser" />
             </Sequence.Variables>
@@ -154,7 +135,27 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="EloGroup - RPA Challenge" sap:VirtualizedContainerService.HintSize="562,638" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="8ba5ba72-23a3-4b6d-b162-f54943e61af3" Version="V1">
+            <uix:NGetText DisplayName="Get Text Remessa" sap:VirtualizedContainerService.HintSize="568,156" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="357, 140, 189, 17" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd cls='Edit' idx='4' /&gt;&lt;ctrl name='Destinatário:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Destinatário:' role='editable text' automationid='' /&gt;" Guid="c3b76cd1-17ff-4ad3-b4ca-6f93756627f2" InformativeScreenshot="2dcdca9908ea2a6219c345aefa12a9d1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector" WaitForReadyArgument="Complete">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="355, 122, 51, 17" ElementType="Text" FriendlyName="'Remessa'" FullSelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' automationid='' check:text='Remessa:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAVCAYAAADiv3Z7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVFhH7VTBEcQgCLQq6qEbi7GVjLXYAQcYOTUx5nEfc7mZneHWrLKAupQSPRWvuVXxJ+aiJ3COXAMgDK1gJbTmwFOsFmPAA7cSLs2lFAgdUmi4dXC/c7yOsI8rIPlYNEiIoDz4QF5jGedo+x50srfPGv3W52/PuCQ5KLfzdk3mhb++c5xM0GQieQBLzAqhmp3vYy3KQFcnpjqJz7hdV2D6jh9g3LnIXeDEtFJ6WGdcjIRKU+tLPNJFMc2x7M/djlbAnst7IXOm/4k5AY+Ew7Cbm1TyLB7pCqSAOsbVNw0n3ZQifkf8kOMFbj4ouap2D+rke0NNPNCVpK1jEo+4+p5yscsZNzAxVw6RdT6ofxim5gY65iXRMrJgD8qEk/G0HLNx6/gJvuYeiNfcqnjNrQozt23b49CYe9rvYK78Xx+JPraX0QKIXHbvAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+              <uix:NGetText.Text>
+                <OutArgument x:TypeArguments="x:String">[last_shipping]</OutArgument>
+              </uix:NGetText.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NGetText>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="IfOpenedByAppBrowser" DisplayName="EloGroup - RPA Challenge" sap:VirtualizedContainerService.HintSize="568,638" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="8ba5ba72-23a3-4b6d-b162-f54943e61af3" Version="V1">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
@@ -211,13 +212,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="EloGroup - RPA Challenge - Controle de Pedidos" sap:VirtualizedContainerService.HintSize="562,612" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[browser]" ScopeGuid="c5cc64bc-52c3-4e0a-8103-2429b96e925c" Version="V1">
+            <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="EloGroup - RPA Challenge - Controle de Pedidos" sap:VirtualizedContainerService.HintSize="568,610" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="Never" OutUiElement="[browser]" ScopeGuid="c5cc64bc-52c3-4e0a-8103-2429b96e925c" Version="V1">
               <uix:NApplicationCard.Body>
                 <ActivityAction x:TypeArguments="x:Object">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,396" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,394" sap2010:WorkflowViewState.IdRef="Sequence_70">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -228,7 +229,7 @@
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="https://marcelstein.com/elochallenge/starttest.php?token=2a9093db887efedf5d9b4cfa7ab25eb0" DesignTimeRectangle="416, 408, 898, 24" ElementType="Text" FriendlyName="'841986'" FullSelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lblnumLote' tag='DIV' type='' /&gt;" Guid="5c456032-4eed-496f-9676-4b31804cdb8b" InformativeScreenshot="cae607eaffaa8e5d8c2c7f6c1aff97cb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='EloGroup - RPA Challenge - Controle de Pedidos' /&gt;" SearchSteps="FuzzySelector">
                           <uix:TargetAnchorable.Anchors>
-                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                               <uix:Target DesignTimeRectangle="237, 408, 180, 24" ElementType="Text" FriendlyName="'Número do lote'" FullSelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Número do lote:' tag='DIV' type='' check:text='Número do lote:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALgAAAAcCAYAAADSvnU/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALDSURBVHhe7ZZLbtRAEIa5L7MlOxASswsLhMQmLAkbThDxWHEAIpIFN5hEOUPSuGdc7b/L1R7bY4Nd+j+pFtPjftbXZT8LhDiGghPXUHDiGgpOXEPBiWsoOHENBSeuoeDENcsR/PeXsHnxMmzO3oWr+6e60QfXn14f9vb2R9jVbaO4+xm2cZwqLm4f60bSxTSCw8Fvzj6HX3WzsPv2ofjfnqc/4WPX/yuHgv8/phe8iueXN/UfB44JvhfAYeUWFiF4KiJ+z9liFsF1AroFfwg75we+CMEdfwJ2Mbng2/P3rWRagltJbz2nEpr6VPHm+131wEO4On+l2gCpWhIqubiG66+HuZu3Tz62PHdc0LxfHM8WfMT4JcH1PqvAtyieWwosNrpAZYWoWefgS7UAJhf84uY+HYgIN4Xg6eJIVLJutSAosE6a8YyV+L0Ypb4xsuRrDGkxZK9jx8dzFtmkMltRz9cpeKm/8b/+9FwD0wseD15+1zJNIXg6XEyI9IU2Sbw1vrTJxcPEY3VK7SgbrKX1phBgHekZrK5auKHj63PGCwX7tM4jtWVvsaZ/I6+u2KzgxsHngsnr/xTB0+H2auuupJJMUzQz6ZFSe4N1kSP5XseP39onXJ7sUljtluDGpw1G8aKtiNkENw/vXwl+JHEyp7UG7DtUQPvCqHlOGL+1T/g9SnDob0VxHStiPsEj8KrchyV4amsSfLLgOBbKqzAFrzBFhTlKlS1d0CqstbUu1sDxe++z7ydK8bIhzRxprBUxr+AVKZkxIKEoQytOFrxCXy4JWENJcByvFSilpuebY/T4Q/YZA/el56znKebBWOsaK/rsgmdJV8lD+ePhTfaJIkB7ClhDUfCIIWuvBKt+sRqb84wZf8A+rbdAJjPmwrokaa2s4IQsFgpOXEPBiWsoOHENBSeuoeDENRScuIaCE8eE8BdLD40v/iwBywAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                             </scg:List>
                           </uix:TargetAnchorable.Anchors>
@@ -272,7 +273,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NApplicationCard>
-            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="562,131" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="568,131" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
               <ui:MultipleAssign.AssignOperations>
                 <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
                   <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -300,7 +301,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:MultipleAssign>
-            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="562,134" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[lote_num]">
+            <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="568,134" sap2010:WorkflowViewState.IdRef="SetValue_1" Text="[lote_num]">
               <ui:SetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c279976c-60c9-49a0-9a47-9074a3e050c5" InformativeScreenshot="dcb72bffb47fcff967a53676b3cca2ff" Selector="&lt;wnd cls='Edit' idx='3' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -318,7 +319,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:SetValue>
-            <uix:NClick ClickType="Single" DisplayName="Click 'Carregar Lote'" sap:VirtualizedContainerService.HintSize="562,156" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+            <uix:NClick ClickType="Single" DisplayName="Click 'Carregar Lote'" sap:VirtualizedContainerService.HintSize="568,156" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="27, 146, 299, 25" ElementType="Button" FriendlyName="'Carregar Lote'" FullSelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Carregar Lote' check:text='Carregar Lote' /&gt;" Guid="7a922ebd-4e30-4fbe-a6d6-61940fe65190" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAAdCAYAAAD7G+rKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIOSURBVHhe7drRkYMgFIVhe6IbmqEVGkgRlJIO0gELRBTuQszObmZF/odvooBXXnIGSJbH4+EBYDSEF4AhEV4AhlSF1+12A4DTKvPqW3jd73cAOB3CC8CQCC8AQyK8AAyJ8AIwJMILwJAIr8k4o71aFr9ESnltXXPcv3PGK2W8a/UBAeE1EWdUCCzjrVvbnPV6Ud7k+zP5SXgRdFMivKbhvAkrrVMGVQvhhQOE1yyOvuC22E6G1Zi2oS09o73WYcWWtpn5WofVm/Fa5e2n3kOxan+u9NI7D+uHmuV8evMV77UplPP9Or43N1wK4TWLXhi05LHxM24r47lYeS1XcVvtZ5Bs52i9d7bq98ZU7XX9tA3WVoztzS3XwFUQXrM4+hKHfh1XSnl1lMMlPyOv87hNDCHxDvHMy/pSq0+25fuyPV5X84qKMMNlEF7TECuSynpwL1dMMhSqgBDbPDmmun+jvtTq69Uv2+N1a264HMJrIv1fG+PnfjYU/07xcuWVt29Gbg/FtjGec6X2N+pLzb53t42tuZV1cAWE12Sq/3mF4NqDYG9XcXsnw0WGQAy8EBKpjjiw3+rnOu/Ul8o62RpU+3vzszYF1nbo35sbLoXwwse4sPJKgdPoA36L8MKfsvlvFax68GGEF4AhEV4AhkR4ARgS4QVgSIfhBQBnVeZVFV4AMArCC8CQCC8AA3r4Lzg262JKFz8JAAAAAElFTkSuQmCC" InformativeScreenshot="0976d02a4903970ae056a6426f6765c6.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image" WaitForReadyArgument="Complete" />
               </uix:NClick.Target>
@@ -329,9 +330,9 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NClick>
-            <ui:InterruptibleWhile Condition="[total &gt;0]" DisplayName="While" sap:VirtualizedContainerService.HintSize="562,2609" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:InterruptibleWhile Condition="[total &gt;0]" DisplayName="While" sap:VirtualizedContainerService.HintSize="568,3162" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,2444" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="532,2997" sap2010:WorkflowViewState.IdRef="Sequence_88">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="order_status" />
                     <Variable x:TypeArguments="x:String" Name="reference" />
@@ -342,7 +343,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NGetText DisplayName="Get Referencia" sap:VirtualizedContainerService.HintSize="484,136" sap2010:WorkflowViewState.IdRef="NGetText_5" InUiElement="[element(pos_order_num)]" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+                  <uix:NGetText DisplayName="Get Referencia" sap:VirtualizedContainerService.HintSize="490,136" sap2010:WorkflowViewState.IdRef="NGetText_5" InUiElement="[element(pos_order_num)]" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
                     <uix:NGetText.Text>
                       <OutArgument x:TypeArguments="x:String">[reference]</OutArgument>
                     </uix:NGetText.Text>
@@ -353,7 +354,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
-                  <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Edit'" FoundElement="[cod_reference]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
+                  <ui:WaitUiElementAppear WaitActive="{x:Null}" WaitVisible="{x:Null}" DisplayName="Find Element 'Edit'" FoundElement="[cod_reference]" sap:VirtualizedContainerService.HintSize="490,106" sap2010:WorkflowViewState.IdRef="WaitUiElementAppear_2">
                     <ui:WaitUiElementAppear.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a89b8b04-5e64-4977-bf57-071f8a793865" InformativeScreenshot="4c0e382491bcb5ecd4ecc1081d980d26" Selector="&lt;wnd cls='Edit' aastate='focusable' idx='2' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -371,7 +372,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:WaitUiElementAppear>
-                  <ui:WaitAttribute TimeoutMS="{x:Null}" Attribute="aastate" AttributeValue="[&quot;focusable&quot;]" DisplayName="Wait Attribute" Element="[cod_reference]" sap:VirtualizedContainerService.HintSize="484,87" sap2010:WorkflowViewState.IdRef="WaitAttribute_1">
+                  <ui:WaitAttribute TimeoutMS="{x:Null}" Attribute="aastate" AttributeValue="[&quot;focusable&quot;]" DisplayName="Wait Attribute" Element="[cod_reference]" sap:VirtualizedContainerService.HintSize="490,87" sap2010:WorkflowViewState.IdRef="WaitAttribute_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -379,7 +380,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:WaitAttribute>
-                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="484,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[reference]">
+                  <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text 'Edit'" sap:VirtualizedContainerService.HintSize="490,134" sap2010:WorkflowViewState.IdRef="SetValue_4" Text="[reference]">
                     <ui:SetValue.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ad52397a-e17e-4a2f-bce0-4e7dab37ca10" InformativeScreenshot="4c0e382491bcb5ecd4ecc1081d980d26" Selector="&lt;wnd cls='Edit' idx='2' /&gt;">
                         <ui:Target.TimeoutMS>
@@ -397,7 +398,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:SetValue>
-                  <uix:NClick ClickType="Single" DisplayName="Click Localizar Remessa" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+                  <uix:NClick ClickType="Single" DisplayName="Click Localizar Remessa" sap:VirtualizedContainerService.HintSize="490,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="27, 258, 299, 25" ElementType="Button" FriendlyName="'Localizar remessa'" FullSelectorArgument="&lt;wnd cls='Button' title='Localizar remessa' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='Localizar remessa' check:text='Localizar remessa' /&gt;" Guid="725c8b29-1b80-4f0c-821c-91b5c6456f53" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAS8AAAAdCAYAAAD7G+rKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJWSURBVHhe7djNccMgEIZh9aRuaEatqAEXoVLcgTsg/C1aYbAOnmS0ynt4JsqaRfjAN+Dp9Xp5ALCG8AJgEuEFwKRDeD0eDwC4LJ1Xb+H1fD4B4HIILwAmEV4ATCK8AJhEeAEwifACYBLhdQfb4ud58Vvvs2/95tzAFwivO/iL8CLEcDGE1x1w8sI/RHjdwShgQt3Nk5+mYHZ+rfV1r0+zd+uW66vzc6pJPc/RnrxWJ2OiMu+w13nn5n1cen9Tb9a5bO2Yyc/L6pf0rNbb6wv1bck9aeySx/Zq3TXHOkwgvO4gbfQ2vDa/hI0tGz1tXrfuddnAMcjCxpWNX8mc7V81Zp9T9UW6J84tYaM/r/W4HvX+tleCTD+ndQz6nvH7lKBMffG5Vyt9ovY3dVwW4XUHvY3X1uT/T5s0fOZCIOSTSKDH9+bTIfCpV8aosbWe5ik9VQy2Zkz7POrbcjhPYS0unNa2FG69Wp7rbc2xDhMIrzvQm3tU05u+u0nLCUxdyQ7jD33l9FavWSe9aYyi6/H57CTUex71iXCizNdMHbC6NlizjMXlEV530N14EjB5c55fG/PVSq5h2+KGJ6/36+JJbx1XHOrtet7fdxhfnwd9Ekr1xCXfrVfrrDnOBRMIrzuIG/dwfQpiuIT6/oO22phx40o9bOo94PYfsOd4nYo9EgpNaNT3lFD42Cvvre9v6no9hx/sy5jhc6cv1A9rKeF2WpM1x3lhAuEFwCTCC4BJhBcAkwgvACYRXgBMIrwAmHQaXgBwVTqvDuEFAFYQXgBMIrwAGPTyPwFvbUKdV7iyAAAAAElFTkSuQmCC" InformativeScreenshot="be722000d0d395387896bb49767bbe83.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="Selector, FuzzySelector, Image" WaitForReadyArgument="Complete" />
                     </uix:NClick.Target>
@@ -408,7 +409,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NClick>
-                  <If Condition="[element(pos_tracking_num).Get(&quot;tag&quot;).Equals(&quot;INPUT&quot;)]" sap:VirtualizedContainerService.HintSize="484,560" sap2010:WorkflowViewState.IdRef="If_4">
+                  <If Condition="[element(pos_tracking_num).Get(&quot;tag&quot;).Equals(&quot;INPUT&quot;)]" sap:VirtualizedContainerService.HintSize="490,1113" sap2010:WorkflowViewState.IdRef="If_4">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -416,7 +417,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Fluxo Remessa Sem Informação" sap:VirtualizedContainerService.HintSize="376,384" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                      <Sequence DisplayName="Fluxo Remessa Sem Informação" sap:VirtualizedContainerService.HintSize="454,937" sap2010:WorkflowViewState.IdRef="Sequence_41">
                         <Sequence.Variables>
                           <Variable x:TypeArguments="x:String" Name="new_shipping" />
                         </Sequence.Variables>
@@ -426,7 +427,7 @@
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NGetText DelayBefore="1.5" DisplayName="Get Text Remessa" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+                        <uix:NGetText DisplayName="Get Text Remessa" sap:VirtualizedContainerService.HintSize="412,156" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
                           <uix:NGetText.Target>
                             <uix:TargetAnchorable DesignTimeRectangle="357, 140, 189, 17" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd cls='Edit' idx='4' /&gt;&lt;ctrl name='Destinatário:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Destinatário:' role='editable text' automationid='' /&gt;" Guid="c3b76cd1-17ff-4ad3-b4ca-6f93756627f2" InformativeScreenshot="2dcdca9908ea2a6219c345aefa12a9d1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector" WaitForReadyArgument="Complete">
                               <uix:TargetAnchorable.Anchors>
@@ -446,7 +447,49 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </uix:NGetText>
-                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="334,96" sap2010:WorkflowViewState.IdRef="SetValue_5" Text="[new_shipping]">
+                        <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="412,413" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                          <ui:InterruptibleWhile.Body>
+                            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,248" sap2010:WorkflowViewState.IdRef="Sequence_94">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NGetText DisplayName="Get Text Remessa" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+                                <uix:NGetText.Target>
+                                  <uix:TargetAnchorable DesignTimeRectangle="357, 140, 189, 17" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;wnd cls='Edit' idx='4' /&gt;&lt;ctrl name='Destinatário:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Destinatário:' role='editable text' automationid='' /&gt;" Guid="c3b76cd1-17ff-4ad3-b4ca-6f93756627f2" InformativeScreenshot="2dcdca9908ea2a6219c345aefa12a9d1.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector" WaitForReadyArgument="Complete">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="355, 122, 51, 17" ElementType="Text" FriendlyName="'Remessa'" FullSelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Remessa:' /&gt;&lt;ctrl name='Remessa:' role='text' automationid='' check:text='Remessa:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAVCAYAAADiv3Z7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFCSURBVFhH7VTBEcQgCLQq6qEbi7GVjLXYAQcYOTUx5nEfc7mZneHWrLKAupQSPRWvuVXxJ+aiJ3COXAMgDK1gJbTmwFOsFmPAA7cSLs2lFAgdUmi4dXC/c7yOsI8rIPlYNEiIoDz4QF5jGedo+x50srfPGv3W52/PuCQ5KLfzdk3mhb++c5xM0GQieQBLzAqhmp3vYy3KQFcnpjqJz7hdV2D6jh9g3LnIXeDEtFJ6WGdcjIRKU+tLPNJFMc2x7M/djlbAnst7IXOm/4k5AY+Ew7Cbm1TyLB7pCqSAOsbVNw0n3ZQifkf8kOMFbj4ouap2D+rke0NNPNCVpK1jEo+4+p5yscsZNzAxVw6RdT6ofxim5gY65iXRMrJgD8qEk/G0HLNx6/gJvuYeiNfcqnjNrQozt23b49CYe9rvYK78Xx+JPraX0QKIXHbvAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NGetText.Target>
+                                <uix:NGetText.Text>
+                                  <OutArgument x:TypeArguments="x:String">[new_shipping]</OutArgument>
+                                </uix:NGetText.Text>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NGetText>
+                            </Sequence>
+                          </ui:InterruptibleWhile.Body>
+                          <ui:InterruptibleWhile.Condition>
+                            <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="last_shipping.Equals(new_shipping)" />
+                          </ui:InterruptibleWhile.Condition>
+                        </ui:InterruptibleWhile>
+                        <Assign sap:VirtualizedContainerService.HintSize="412,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[last_shipping]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">[new_shipping]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <ui:SetValue AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Set Text" sap:VirtualizedContainerService.HintSize="412,96" sap2010:WorkflowViewState.IdRef="SetValue_5" Text="[new_shipping]">
                           <ui:SetValue.Target>
                             <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[element(pos_tracking_num)]" Id="d96461bc-0fb9-4e2e-8a10-cfb9861dd6ef">
                               <ui:Target.TimeoutMS>
@@ -470,7 +513,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <uix:NGetText DisplayName="Get Text Status do Pedido" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" ScrapingMethod="Fulltext" Version="V1">
+                  <uix:NGetText DisplayName="Get Text Status do Pedido" sap:VirtualizedContainerService.HintSize="490,156" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" ScrapingMethod="Fulltext" Version="V1">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable DesignTimeRectangle="355, 218, 393, 24" ElementType="Text" FriendlyName="'Saiu para entrega'" FullSelectorArgument="&lt;wnd cls='Static' title='Saiu para entrega' /&gt;&lt;ctrl name='Saiu para entrega' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Saiu para entrega' /&gt;&lt;ctrl role='text' automationid='' /&gt;" Guid="96b0f0ea-e037-4e53-a40d-716fbf93212d" InformativeScreenshot="be16a2f5753db309239a274cd44ba70a.png" ScopeSelectorArgument="&lt;wnd app='stlog.exe' cls='AutoIt v3 GUI' title='ST Logística - Rastreamento de Pacotes v1.00' /&gt;" SearchSteps="FuzzySelector">
                         <uix:TargetAnchorable.Anchors>
@@ -490,7 +533,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
-                  <If Condition="[order_status.Equals(&quot;Em transferencia&quot;)]" sap:VirtualizedContainerService.HintSize="484,328" sap2010:WorkflowViewState.IdRef="If_5">
+                  <If Condition="[order_status.Equals(&quot;Em transferencia&quot;)]" sap:VirtualizedContainerService.HintSize="490,328" sap2010:WorkflowViewState.IdRef="If_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -524,7 +567,7 @@
                       </Sequence>
                     </If.Else>
                   </If>
-                  <uix:NSelectItem DisplayName="Select Item Situacao Pedido" sap:VirtualizedContainerService.HintSize="484,136" sap2010:WorkflowViewState.IdRef="NSelectItem_5" InUiElement="[element(pos_order_status)]" Item="[order_status]" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
+                  <uix:NSelectItem DisplayName="Select Item Situacao Pedido" sap:VirtualizedContainerService.HintSize="490,136" sap2010:WorkflowViewState.IdRef="NSelectItem_5" InUiElement="[element(pos_order_status)]" Item="[order_status]" ScopeIdentifier="648b5234-1c34-4ffe-998e-1d3ac7b42bf6" Version="V1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>

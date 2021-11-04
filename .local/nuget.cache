@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kDD1LCLiCHrxa3mgC6sZX+GKcZjuE+sEM8Z8EV6gZ8q6oKVdkUP6SlHxjgRa2TTC+aT4DWpZ2yyr3FaLE1PGzw==",
+  "dgSpecHash": "5O10lwROP1vURsaO7dfUQ++5UDo1miMlIkYzN/GJlb5r9eBmW9xidGZhK8IdL0/8At5k3XDAmpHaK6RC78YVgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\roger\\Downloads\\LeGroup-RPA-Crack-the-Code-main\\.local\\",
+  "projectFilePath": "G:\\UIPath\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\roger\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\roger\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
