@@ -7582,9 +7582,9 @@
     "restore": {
       "projectUniqueName": "LeGroup Crack the Code v1.1",
       "projectName": "LeGroup Crack the Code v1.1",
-      "projectPath": "G:\\UIPath\\.local",
+      "projectPath": "C:\\Users\\roger\\Downloads\\LeGroup-RPA-Crack-the-Code-main\\.local",
       "packagesPath": "C:\\Users\\roger\\.nuget\\packages\\",
-      "outputPath": "G:\\UIPath\\.local"
+      "outputPath": "C:\\Users\\roger\\Downloads\\LeGroup-RPA-Crack-the-Code-main\\.local"
     },
     "frameworks": {
       "net461": {
